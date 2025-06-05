@@ -7,16 +7,16 @@
 
 @font-face {
     font-family: "Recursive";
-    src: url(./Fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
+    src: url(./fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
 }
 
 :root {
-    --branco: #FFFFFF;
-    --preto: #000000;
-    --verde-pixelV: #00C621;
-    --roxo-pixelV: #4700CF;
-    --fundo-site: #F3F2F2;
-    --contato: #E5E5E5;
+    --Branco: #ffffff;
+    --Preto: #000000;
+    --verde-PV: #00c621;
+    --Roxo-PV: #4700CF;
+    --Fundo-site: #f3f2f2;
+    --Contato: #E5E5E5;
 }
 
 .container-grid {
@@ -27,7 +27,7 @@
 
 body {
     overflow-x: hidden;
-    background-color: var(--fundo-site);
+    background-color: var(--Fundo-site)
 }
 
 .titulo {
@@ -38,26 +38,25 @@ body {
 }
 
 .titulo h2 {
-    color: var(--branco);
-    margin-bottom: 0;
-    background-color: var(--roxo-pixelV);
+    color: var(--Branco);
+    margin-bottom: 0px;
+    background-color: var(--Roxo-PV);
     border-radius: 20px;
     padding: 10px 18px;
 }
 
 .titulo span {
-    color: var(--roxo-pixelV);
-    border-bottom: solid 3px var(--verde-pixelV);
+    color: var(--Roxo-PV);
+    border-bottom: solid 3px var(--verde-PV)
 }
 
-
-/* --------------Header--------------- */
+/* ------ Header ------ */
 
 .banner {
-    background-image: url(./IMG/Banner.png);
+    background-image: url(./Img/Banner.png);
     height: 120vh;
     background-repeat: no-repeat;
-    background-position: 0 -10;
+    background-position: 0 -10px;
 
     display: flex;
     flex-direction: column;
@@ -88,17 +87,16 @@ header img {
 
 .menu a {
     font-size: 20px;
-    color: var(--branco);
+    color: var(--Branco);
     font-family: "Recursive", sans-linear;
 
     text-decoration: underline transparent;
     text-decoration-thickness: 2px;
-
     transition: text-decoration 500ms ease;
 }
 
 .menu a:hover {
-    text-decoration-color: var(--verde-pixelV);
+    text-decoration-color: var(--verde-PV);
 }
 
 .conteudo-banner {
@@ -114,8 +112,8 @@ header img {
 
 .conteudo-banner p {
     font-size: 26px;
-    font-family: "Recursive", sans linear;
-    color: var(--branco);
+    font-family: "Recursive", sans-linear;
+    color: var(--Branco);
     width: 350px;
     margin-bottom: 100px;
 }
@@ -124,66 +122,62 @@ header img {
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: "Recursive";
-    color: var(--verde-pixelV);
+    font-family: "Recursive", sans-linear;
+    color: var(--verde-PV);
     list-style-type: none;
     padding: 0;
 }
 
+/* ------ SOBRE ------ */
 
-
-/* ------------SOBRE------------ */
-#Sobre {
+#sobre {
     display: flex;
     align-items: center;
     gap: 80px;
     margin-top: 120px;
-    margin-bottom: 120px;
+    margin-bottom: 120px
 }
 
-#Sobre img {
+#sobre img {
     max-width: 460px;
     width: 40%;
     border-radius: 40px;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0. 10px, 10px, 0 rgba(0, 0, 0, 0.2);
 }
 
 #sobre h2 {
     margin-right: 5px;
 }
 
-#Sobre p {
-    font-family: "Recursive", sans linear;
+#sobre p {
+    font-family: "Recursive", sans-linear;
     font-size: 20px;
     text-align: justify;
     margin-top: 30px;
 }
 
-/* -----------Parallax------------- */
+/* ------ PARALLAX ------ */
+
 #parallax {
     height: 250px;
-    /* background-image: url(./IMG/parallax.svg); */
-
-    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./IMG/parallax.svg);
-
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./Img/parallax.svg);
     margin-bottom: 120px;
-
     background-attachment: fixed;
-
     background-size: 30%;
 }
 
-/* -------------Serviços--------------- */
-#Serviços {
+/* ------ SERVIÇOS ------ */
+
+#servicos {
     margin-bottom: 120px;
 }
 
-#Serviços .titulo {
+#servicos .titulo {
     justify-content: center;
     margin-bottom: 55px;
 }
 
-#Serviços h2 {
+#servicos h2 {
     margin-left: 5px;
 }
 
@@ -195,21 +189,21 @@ header img {
     position: relative;
 }
 
-.Linha-roxa {
+.linha-roxa {
     height: 250px;
     width: 100vw;
-    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%, rgba(71, 0, 207, 1) 100%);
+    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%, rgba(71, 0, 207, 1)100%);
     position: absolute;
     z-index: -1;
     top: calc(50% - 125px);
 }
 
-#Serviços .cards {
+#servicos .card {
     width: 300px;
     margin: 20px;
     padding: 40px 20px;
     border-radius: 40px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
 
@@ -219,40 +213,39 @@ header img {
     justify-content: center;
 }
 
-#Serviços .cards h3 {
+#servicos .card h3 {
     font-size: 24px;
     margin: 5px 0 30px;
-    color: var(--roxo-pixelV);
+    color: var(--Roxo-PV);
     font-family: "Recursive", sans-linear-bold;
     text-align: center;
 }
 
-#Serviços .cards p {
-    font-family: "Recursive", sans-linear;
+#servicos .card p {
+    font-family: "Recursive", Sans-linear;
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.5;
 }
 
-#Serviços .cards svg {
-    color: var(--roxo-pixelV);
+#servicos .card svg {
+    color: var(--Roxo-PV);
     height: 75px;
-
 }
 
-#Serviços .cards:hover {
-    border: solid 3px var(--verde-pixelV);
+#servicos .card:hover {
+    border: solid 3px var(--verde-PV);
 }
 
-#Serviços .cards:hover svg {
-    fill: var(--verde-pixelV);
+#servicos .card:hover svg {
+    fill: var(--verde-PV)
 }
 
-#Serviços .cards:hover h3 {
-    color: var(--verde-pixelV);
+#servicos .card:hover h3 {
+    color: var(--verde-PV);
 }
 
-/* ----------------Cases---------------- */
+/* ------ CASES ------ */
 
 #cases h2 {
     margin-right: 5px;
@@ -276,13 +269,14 @@ header img {
     width: 90%;
 }
 
-/* ----------------------Contato--------------------- */
+/* ------ CCONTATO ------ */
 
 #contato {
     text-align: center;
     padding-bottom: 100px;
     margin-top: 100px;
 }
+
 
 #contato .titulo {
     justify-content: center;
@@ -296,19 +290,15 @@ header img {
 #contato form {
     max-width: 980px;
     width: 90%;
-
     margin: 0 auto;
     padding: 60px 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    border: solid 3px var(--roxo-pixelV);
+    border: solid 3px var(--Roxo-PV);
     border-radius: 40px;
-    background-color: var(--contato);
-
-    color: var(--preto);
+    background-color: var(--Contato);
+    color: var(--Preto);
     font-family: "Recursive", sans-linear;
     font-size: 17px;
 }
@@ -316,7 +306,6 @@ header img {
 .campo {
     width: 60%;
     text-align: left;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -326,7 +315,6 @@ header img {
 .campo-descricao {
     width: 60%;
     text-align: left;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -335,19 +323,19 @@ header img {
 
 .campo input {
     height: 40px;
-    color: var(--preto);
-    background-color: var(--branco);
+
+    color: var(--Preto);
+    background-color: var(--Branco);
 
     border: none;
     border-radius: 4px;
-
     text-indent: 10px;
     outline: none;
 }
 
-.campo-descricao textarea {
-    color: var(--preto);
-    background-color: var(--branco);
+.campo-descricao textarea{
+    color: var(--Preto);
+    background-color: var(--Branco);
 
     border: none;
     border-radius: 4px;
@@ -357,55 +345,51 @@ header img {
     resize: none;
 }
 
-.campo input,
-.campo-descricao textarea {
+.campo label, .campo-descricao label{
+    margin-bottom: 15px;
+}
+
+.campo input, .campo-descricao textarea{
     font-family: "Recursive", sans-linear;
     font-size: 17px;
 }
 
-.campo label,
-.campo-descricao label {
-    margin-bottom: 15px;
+.campo input::placeholder, .campo-descricao::placeholder{
+    color: #a0a0a0;
 }
 
-.campo input::placeholder,
-.campo-descricao textarea::placeholder{
-    color: #A0A0A0;
+.campo input:focus, .campo-descricao textarea:focus{
+    outline: 2px solid var(--verde-PV)
 }
 
-
-.campo input:focus,
-.campo-descricao textarea:focus {
-    outline: 2px solid var(--verde-pixelV);
-}
-
-#contato form button {
+#contato form button{
     height: 40px;
     width: 60%;
-    background-color: var(--roxo-pixelV);
-    color: var(--branco);
+
+    background-color: var(--Roxo-PV);
+    color: var(--Branco);
 
     border: none;
     border-radius: 4px;
 
+    font-family: "Recursive" , san-linear;
     font-size: 17px;
-    font-family: "Recursive", sans-linear-bold;
     font-weight: 700;
-
     text-transform: uppercase;
     cursor: pointer;
 
     transition: background-color 500ms;
 }
 
-#contato form button:hover {
-    background-color: var(--verde-pixelV);
+#contato form button:hover{
+    background-color: var(--verde-PV);
 }
-/* ---------------------Footer----------------------- */
+
+/* ------ FOOTER ------ */
 
 footer{
     height: 250px;
-    background-image: url(./img/footer.png);
+    background-image: url(./Img/footer.png);
 }
 
 footer img{
@@ -421,7 +405,7 @@ footer .container-grid{
 }
 
 .redes-sociais{
-    height:50%;
+    height: 50%;
 
     display: flex;
     flex-direction: column;
@@ -430,9 +414,8 @@ footer .container-grid{
 }
 
 .redes-sociais p{
-    color: var(--branco);
-
-    font-family: "Recursive" , sans-linear;
+    color: var(--Branco);
+    font-family: "Recursive", sans-linear;
     font-size: 24px;
 }
 
@@ -442,10 +425,165 @@ footer .container-grid{
     display: flex;
     justify-content: space-between;
 }
+
 .icones-redes a{
-    color: var(--branco);
+    color: var(--Branco);
 }
 
 .icones-redes a:hover{
-color: var(--verde-pixelV);
+    color: var(--verde-PV);
 }
+
+/* MENU DE HAMBURGER */
+
+.menu-fechado{
+    display: none;
+}
+
+#icone-barras, #icone-x{
+    display: none;
+}
+
+/* ------ RESPONSIVIDADE ------ */
+
+    @media screen and (max-width: 1024px){
+        .titulo, .titulo h2{
+            font-family: "Recursive" , sans-linear;
+            font-size: 22px;
+        }
+
+        .titulo span{
+            line-height: 45px;
+        }
+
+        .menu {
+            justify-content: space-evenly;
+        }
+
+        #sobre p{
+font-size: 16px;
+        }
+
+        #servicos .card svg{
+           height: 55px;
+        }
+    }
+
+@media screen and (max-width: 768px){
+    header{
+        position: relative;
+    }
+
+    header button{
+        width: 50px;
+        background: none;
+        border: none;
+
+        cursor: pointer;
+        display: unset;
+
+    }
+
+    header svg{
+        fill:var(--Branco)
+    }
+
+    nav.menu{
+        height: 500px;
+        width: 350px;
+        
+        padding: 0px 30px;
+
+        background-color: var(--Preto);
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        position: absolute;
+        top: 165px;
+        right: 0px;
+
+        z-index: 1;
+    }
+      .conteudo-banner img{
+        display: none;
+      }
+
+      .conteudo-banner{
+        justify-content: center;
+      }
+
+      .conteudo-banner{
+        text-align: center;
+      }
+
+      #sobre img{
+        display: none;
+      }
+
+      .titulo{
+        justify-content: center;
+      }
+
+      #cases img{
+        height: 200px;
+      }
+
+      footer .roda-pe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;      
+    }
+
+    footer img{
+        height: 80px;
+    }
+
+    .redes-sociais{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .redes-sociais svg{
+        height: 35px;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    nav.menu{
+        width: 260px;
+    }
+
+    header img{
+        width: 185px;
+    }
+
+    .conteudo-banner p{
+        font-size: 24px;
+        width: 310px;
+    }
+
+    .conteudo-banner ul{
+        font-size: 25px;
+    }
+
+    .titulo,
+    .titulo h2{
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+    
+
