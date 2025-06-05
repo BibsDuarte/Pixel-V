@@ -1,3 +1,4 @@
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +17,6 @@
     --roxo-pixelV: #4700CF;
     --fundo-site: #F3F2F2;
     --contato: #E5E5E5;
-
 }
 
 .container-grid {
@@ -32,7 +32,7 @@ body {
 
 .titulo {
     display: flex;
-    font-family: "Recursive", sans linear-bold;
+    font-family: "Recursive", sans-linear-bold;
     font-size: 35px;
     font-weight: 600;
 }
@@ -50,24 +50,23 @@ body {
     border-bottom: solid 3px var(--verde-pixelV);
 }
 
-/* ------------Header-------------- */
+
+/* --------------Header--------------- */
 
 .banner {
-    background-image: url("./img/Banner.png");
+    background-image: url(./IMG/Banner.png);
     height: 120vh;
     background-repeat: no-repeat;
-    background-position: 0 -10px;
+    background-position: 0 -10;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 header {
     height: 165px;
 }
-
 
 header .container-grid {
     height: 100%;
@@ -85,7 +84,6 @@ header img {
     width: 70%;
     display: flex;
     justify-content: space-between;
-
 }
 
 .menu a {
@@ -109,14 +107,14 @@ header img {
     align-items: center;
 }
 
-.conteudo-banner img{
+.conteudo-banner img {
     max-width: 380px;
     width: 50%;
 }
 
 .conteudo-banner p {
     font-size: 26px;
-    font-family: "Recursive", sans-Linear;
+    font-family: "Recursive", sans linear;
     color: var(--branco);
     width: 350px;
     margin-bottom: 100px;
@@ -126,14 +124,15 @@ header img {
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: "Recursive", sans-linear-bold;
+    font-family: "Recursive";
     color: var(--verde-pixelV);
     list-style-type: none;
     padding: 0;
 }
 
 
-/* ---------------SOBRE---------------- */
+
+/* ------------SOBRE------------ */
 #Sobre {
     display: flex;
     align-items: center;
@@ -149,136 +148,256 @@ header img {
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-#Sobre h2 {
+#sobre h2 {
     margin-right: 5px;
 }
 
 #Sobre p {
-    font-family: "Recursive", sans-linear;
+    font-family: "Recursive", sans linear;
     font-size: 20px;
     text-align: justify;
     margin-top: 30px;
 }
 
-/* -------------------parallax--------------- */
-
-#parallax{
+/* -----------Parallax------------- */
+#parallax {
     height: 250px;
+    /* background-image: url(./IMG/parallax.svg); */
 
-    background-image: url(./img/parallax.svg);
-
-    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./img/parallax.svg);
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./IMG/parallax.svg);
 
     margin-bottom: 120px;
 
     background-attachment: fixed;
 
     background-size: 30%;
-    }
+}
 
-    /* ---------------Serviços--------------- */
-    #servicos{
-        margin-bottom: 120px;
-    }
-    
+/* -------------Serviços--------------- */
+#Serviços {
+    margin-bottom: 120px;
+}
 
-    #servicos .titulo{
-        justify-content: center;
-        margin-bottom: 55px;
-    }
+#Serviços .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
 
-    #servicos h2{
-        margin-left: 5px;
-    }
+#Serviços h2 {
+    margin-left: 5px;
+}
 
-    .container-cards{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        position: relative;
-    }
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
 
+.Linha-roxa {
+    height: 250px;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%, rgba(71, 0, 207, 1) 100%);
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 125px);
+}
 
+#Serviços .cards {
+    width: 300px;
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 40px;
+    background-color: #F2F2F2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
 
-    .linha-roxa{
-        height: 250px;
-        width: 100vw;
-        background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%, rgba(71, 0, 207, 1)100%);
-        position: absolute;
-        z-index: -1;
-        top: calc(50% - 125px);
-        
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-    #servicos .card{
-        width: 300px;
-        margin: 20px;
-        padding: 40px 20px;
-        border-radius: 40px;
-        background-color: #f2f2f2;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        text-align: center;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #servicos .card h3{
-
+#Serviços .cards h3 {
     font-size: 24px;
     margin: 5px 0 30px;
     color: var(--roxo-pixelV);
     font-family: "Recursive", sans-linear-bold;
     text-align: center;
-    }
+}
 
-    #servicos .card p{
-        font-family: "Recursive", sans-linear;
-        font-size: 18px;
-        margin-bottom: 20px;
-        line-height: 1.5;
-    }
-    
-    #servicos .card svg{
-        color: var(--roxo-pixelV);
-        height: 75px;
-    }
+#Serviços .cards p {
+    font-family: "Recursive", sans-linear;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
 
-    #servicos .card:hover {
-        border: solid 3px var(--verde-pixelV);
-    }
-    
-    #servicos .card:hover svg{
-        fill: var(--verde-pixelV);
-    }
+#Serviços .cards svg {
+    color: var(--roxo-pixelV);
+    height: 75px;
 
-    #servicos .card:hover h3{
-        color: var(--verde-pixelV);
-    }
+}
 
-    /* -----------------Cases------------------ */
+#Serviços .cards:hover {
+    border: solid 3px var(--verde-pixelV);
+}
 
-    #cases h2{
-        margin-right: 5px;
-    }
+#Serviços .cards:hover svg {
+    fill: var(--verde-pixelV);
+}
 
-    #cases{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        margin-bottom: 120px;
-    }
+#Serviços .cards:hover h3 {
+    color: var(--verde-pixelV);
+}
 
-    #cases img{
-        height: 300px;
-        border-radius: 40px;
-    }
+/* ----------------Cases---------------- */
 
-    #meuCarrossel{
-        max-width: 1170px;
-        width: 90%
-    }
+#cases h2 {
+    margin-right: 5px;
+}
+
+#cases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 120px;
+}
+
+#cases img {
+    height: 300px;
+    border-radius: 40px;
+}
+
+#meuCarrossel {
+    max-width: 1170px;
+    width: 90%;
+}
+
+/* ----------------------Contato--------------------- */
+
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-top: 100px;
+}
+
+#contato .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#contato h2 {
+    margin-left: 5px;
+}
+
+#contato form {
+    max-width: 980px;
+    width: 90%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: solid 3px var(--roxo-pixelV);
+    border-radius: 40px;
+    background-color: var(--contato);
+
+    color: var(--preto);
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo {
+    width: 60%;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+    color: var(--preto);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+    outline: none;
+}
+
+.campo-descricao textarea {
+    color: var(--preto);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo label,
+.campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder{
+    color: #A0A0A0;
+}
+
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--verde-pixelV);
+}
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+    background-color: var(--roxo-pixelV);
+    color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Recursive", sans-linear-bold;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover {
+    background-color: var(--verde-pixelV);
+}
